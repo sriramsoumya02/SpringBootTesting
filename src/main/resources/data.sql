@@ -1,10 +1,17 @@
 DROP TABLE IF EXISTS CARS;
 DROP TABLE IF EXISTS TODO;
+DROP TABLE IF EXISTS STUDENT;
 
 CREATE TABLE CARS (
   id INT AUTO_INCREMENT  PRIMARY KEY,
   name VARCHAR(250) NOT NULL,
   type VARCHAR(250) NOT NULL
+);
+
+CREATE TABLE STUDENT (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  name VARCHAR(250) NOT NULL,
+  description VARCHAR(250) NOT NULL
 );
 
 CREATE TABLE TODO (
@@ -18,3 +25,5 @@ INSERT INTO CARS (id, name, type) VALUES ('1002','micra','hatchback');
 INSERT INTO CARS (id, name, type) VALUES ('1003','lodgy','suv');
 INSERT INTO TODO (id, text, IS_COMPLETED) VALUES ('1001','eat thrice',true);
 INSERT INTO TODO (id, text, IS_COMPLETED) VALUES ('1002','exercise once',true);
+INSERT INTO STUDENT (id, name, description) VALUES ('1001','Soumya','10thClass');
+INSERT INTO STUDENT (id, name, description) VALUES ('2002','Rishi','baby');
