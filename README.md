@@ -38,3 +38,6 @@ it is used for repository test
 
 
 //https://www.springboottutorial.com/integration-testing-for-spring-boot-rest-services
+
+very useful information related to randmo ports and environments 
+https://dzone.com/articles/integration-testing-in-spring-boot-1
